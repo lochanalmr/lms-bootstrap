@@ -8,8 +8,13 @@ function greet(){
     }
 }
 
-function themeToggle(){
-
-}
+document.getElementById("themeToggle").addEventListener("click", function () {
+    const body = document.body;
+    if (body.classList.contains("color-scheme-light")) {
+        body.classList.replace("color-scheme-light", "color-scheme-dark");
+    } else if (body.classList.contains("color-scheme-dark")) {
+        body.classList.replace("color-scheme-dark", "color-scheme-light");
+    }
+});
 
 greet();
