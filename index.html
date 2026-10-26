@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LMS</title>
+    <link href="styles.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +25,9 @@
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <a class="navbar-brand instrument-serif-regular fs-lg text" href="#"
+        <a
+          class="navbar-brand instrument-serif-regular fs-lg text"
+          href="index.html"
           >LMS</a
         >
         <button
@@ -52,7 +55,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50" href="#courses">Courses</a>
+                <a class="nav-link text-white-50" href="./pages/courses.html"
+                  >Courses</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white-50" href="./pages/about-us.html"
@@ -60,10 +65,14 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white-50" href="./pages/privacy-policy.html#contact">Contact</a>
+                <a class="nav-link text-white-50" href="./pages/contact.html"
+                  >Contact</a
+                >
               </li>
               <li id="themeToggle" class="nav-item">
-                <button class="btn btn-secondary bg-primary" type="button">Switch Theme</button>
+                <button class="btn btn-secondary bg-primary" type="button">
+                  Switch Theme
+                </button>
               </li>
             </ul>
           </div>
@@ -123,9 +132,9 @@
         <div class="container mt-4 mb-0">
           <div class="column mx-auto">
             <div class="row justify-content-center p-5">
-              <section class="card p-0 m-5 hover-lift" style="max-width: 360px">
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
                 <img
-                  src="./images/img1.png"
+                  src="../images/img1.jpg"
                   class="card-img-top"
                   alt="web development"
                   style="height: 200px; object-fit: cover; width: 100%"
@@ -136,16 +145,63 @@
                     Learn to build modern, responsive websites using HTML, CSS
                     and JavaScript.
                   </p>
-                  <a
-                    href="./pages/web-development.html"
+                  <button
+                    type="button"
                     class="btn-solid theme-primary"
-                    >Learn More</a
+                    data-bs-toggle="dialog"
+                    data-bs-target="#webDevelopmentDialog"
                   >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="webDevelopmentDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">Web Development</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img1.jpg"
+                        class="p-3"
+                        alt="Web Development course"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Explore the world of web development and learn how to
+                        build modern, responsive, and interactive websites from
+                        scratch. This course covers the essential technologies
+                        of HTML, CSS, and JavaScript, guiding you through the
+                        process of structuring web pages, designing attractive
+                        layouts, and adding dynamic functionality. Gain
+                        practical experience by working on real-world projects,
+                        developing your problem-solving skills, and
+                        understanding the fundamentals of front-end development.
+                        Whether you are a complete beginner or looking to
+                        strengthen your existing skills, this course will
+                        provide you with a solid foundation to start your
+                        journey as a web developer.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
                 </div>
               </section>
-              <section class="card p-0 m-5 hover-lift" style="max-width: 360px">
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
                 <img
-                  src="./images/img2.png"
+                  src="../images/img2.jpg"
                   class="card-img-top"
                   alt="data science"
                   style="height: 200px; object-fit: cover; width: 100%"
@@ -156,16 +212,66 @@
                     Master data analysis, visualization, and machine learning
                     techniques.
                   </p>
-                  <a
-                    href="./pages/data-science.html"
+                  <button
+                    type="button"
                     class="btn-solid theme-primary"
-                    >Learn More</a
+                    data-bs-toggle="dialog"
+                    data-bs-target="#dataScienceDialog"
                   >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="dataScienceDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">Data Science</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img2.jpg"
+                        class="p-3"
+                        alt="data science"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Discover the power of data science and learn how to
+                        transform raw data into meaningful insights. This course
+                        introduces you to essential concepts such as data
+                        collection, data cleaning, exploratory data analysis,
+                        statistical methods, and data visualization. Gain
+                        hands-on experience with tools and programming languages
+                        such as Python, Pandas, and Matplotlib to analyze
+                        datasets, identify patterns, and communicate findings
+                        effectively. Explore the fundamentals of statistical
+                        modeling and machine learning while developing practical
+                        problem-solving and analytical skills through real-world
+                        projects. Whether you are a beginner or looking to
+                        expand your technical knowledge, this course provides a
+                        strong foundation for understanding data-driven
+                        decision-making and pursuing further studies or a career
+                        in data science.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
                 </div>
               </section>
-              <section class="card p-0 m-5 hover-lift" style="max-width: 360px">
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
                 <img
-                  src="./images/img3.png"
+                  src="../images/img3.jpg"
                   class="card-img-top"
                   alt="digital marketing"
                   style="height: 200px; object-fit: cover; width: 100%"
@@ -176,11 +282,61 @@
                     Understand SEO, social media marketing, and online branding
                     strategies.
                   </p>
-                  <a
-                    href="./pages/digital-marketing.html"
+                  <button
+                    type="button"
                     class="btn-solid theme-primary"
-                    >Learn More</a
+                    data-bs-toggle="dialog"
+                    data-bs-target="#digitalMarketingDialog"
                   >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="digitalMarketingDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">Digital Marketing</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img3.jpg"
+                        class="p-3"
+                        alt="digital marketing"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Discover the fundamentals of digital marketing and learn
+                        how to promote brands, products, and services in the
+                        digital world. This course explores essential marketing
+                        strategies, including social media marketing, search
+                        engine optimization (SEO), content marketing, email
+                        marketing, and online advertising. Learn how to identify
+                        target audiences, create engaging content, build a
+                        strong online presence, and develop effective digital
+                        marketing campaigns. Gain insights into website traffic
+                        analysis, audience engagement, and performance
+                        measurement using modern digital marketing tools and
+                        analytics. Through practical examples and real-world
+                        scenarios, you will develop the skills needed to reach
+                        potential customers, strengthen brand awareness, and
+                        achieve marketing objectives in an increasingly
+                        competitive online environment.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
                 </div>
               </section>
             </div>

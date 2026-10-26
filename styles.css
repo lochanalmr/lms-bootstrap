@@ -1,0 +1,18 @@
+dialog.dialog:not([open]) {
+    display: none;
+}
+
+dialog.dialog {
+    width: min(90vw, 640px);
+    max-width: calc(100% - 2rem);
+    box-sizing: border-box;
+}
+
+dialog.dialog .dialog-body > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+}

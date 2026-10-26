@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LMS</title>
+    <link href="../styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="color-scheme-light">
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script.js" defer></script>
+    <nav
+      class="navbar sm:navbar-expand bg-1 fg-2 theme-primary theme-contrast"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand instrument-serif-regular fs-lg text"
+          href="../index.html"
+          >LMS</a
+        >
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarNav"
+          aria-labelledby="navbarNavLabel"
+        >
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="courses.html"
+                  >Courses</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="about-us.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li id="themeToggle" class="nav-item">
+                <button class="btn btn-secondary bg-primary" type="button">
+                  Switch Theme
+                </button>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <section id="courses" class="w-100 mb-0">
+      <div>
+        <div class="pt-10">
+          <h2 class="text-center fs-2xl text">Courses</h2>
+        </div>
+        <div class="container mt-4 mb-0">
+          <div class="column mx-auto">
+            <div class="row justify-content-center p-5">
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
+                <img
+                  src="../images/img1.jpg"
+                  class="card-img-top"
+                  alt="web development"
+                  style="height: 200px; object-fit: cover; width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Web Development</h4>
+                  <p class="card-text">
+                    Learn to build modern, responsive websites using HTML, CSS
+                    and JavaScript.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn-solid theme-primary"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#webDevelopmentDialog"
+                  >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="webDevelopmentDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">Web Development</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img1.jpg"
+                        class="p-3"
+                        alt="Web Development course"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Explore the world of web development and learn how to
+                        build modern, responsive, and interactive websites from
+                        scratch. This course covers the essential technologies
+                        of HTML, CSS, and JavaScript, guiding you through the
+                        process of structuring web pages, designing attractive
+                        layouts, and adding dynamic functionality. Gain
+                        practical experience by working on real-world projects,
+                        developing your problem-solving skills, and
+                        understanding the fundamentals of front-end development.
+                        Whether you are a complete beginner or looking to
+                        strengthen your existing skills, this course will
+                        provide you with a solid foundation to start your
+                        journey as a web developer.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
+                </div>
+              </section>
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
+                <img
+                  src="../images/img2.jpg"
+                  class="card-img-top"
+                  alt="data science"
+                  style="height: 200px; object-fit: cover; width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Data Science</h4>
+                  <p class="card-text">
+                    Master data analysis, visualization, and machine learning
+                    techniques.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn-solid theme-primary"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#dataScienceDialog"
+                  >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="dataScienceDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">Data Science</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img2.jpg"
+                        class="p-3"
+                        alt="data science"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Discover the power of data science and learn how to
+                        transform raw data into meaningful insights. This course
+                        introduces you to essential concepts such as data
+                        collection, data cleaning, exploratory data analysis,
+                        statistical methods, and data visualization. Gain
+                        hands-on experience with tools and programming languages
+                        such as Python, Pandas, and Matplotlib to analyze
+                        datasets, identify patterns, and communicate findings
+                        effectively. Explore the fundamentals of statistical
+                        modeling and machine learning while developing practical
+                        problem-solving and analytical skills through real-world
+                        projects. Whether you are a beginner or looking to
+                        expand your technical knowledge, this course provides a
+                        strong foundation for understanding data-driven
+                        decision-making and pursuing further studies or a career
+                        in data science.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
+                </div>
+              </section>
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
+                <img
+                  src="../images/img3.jpg"
+                  class="card-img-top"
+                  alt="digital marketing"
+                  style="height: 200px; object-fit: cover; width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Digital Marketing</h4>
+                  <p class="card-text">
+                    Understand SEO, social media marketing, and online branding
+                    strategies.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn-solid theme-primary"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#digitalMarketingDialog"
+                  >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="digitalMarketingDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">Digital Marketing</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img3.jpg"
+                        class="p-3"
+                        alt="digital marketing"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Discover the fundamentals of digital marketing and learn
+                        how to promote brands, products, and services in the
+                        digital world. This course explores essential marketing
+                        strategies, including social media marketing, search
+                        engine optimization (SEO), content marketing, email
+                        marketing, and online advertising. Learn how to identify
+                        target audiences, create engaging content, build a
+                        strong online presence, and develop effective digital
+                        marketing campaigns. Gain insights into website traffic
+                        analysis, audience engagement, and performance
+                        measurement using modern digital marketing tools and
+                        analytics. Through practical examples and real-world
+                        scenarios, you will develop the skills needed to reach
+                        potential customers, strengthen brand awareness, and
+                        achieve marketing objectives in an increasingly
+                        competitive online environment.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
+                </div>
+              </section>
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
+                <img
+                  src="../images/img4.jpg"
+                  class="card-img-top"
+                  alt="programming basics"
+                  style="height: 200px; object-fit: cover; width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Programming Basics</h4>
+                  <p class="card-text">Learn the basics of programming.</p>
+                  <button
+                    type="button"
+                    class="btn-solid theme-primary"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#programmingBasicsDialog"
+                  >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="programmingBasicsDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">Programming Basics</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img4.jpg"
+                        class="p-3"
+                        alt="programming basics"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Build a strong foundation in programming and learn how
+                        to solve problems through code. This course introduces
+                        essential programming concepts, including variables,
+                        data types, operators, conditional statements, loops,
+                        functions, and basic data structures. Develop your
+                        logical thinking and problem-solving skills while
+                        learning how to write, test, debug, and improve simple
+                        programs. Through hands-on exercises and practical
+                        coding challenges, you will gain experience in breaking
+                        down complex problems into manageable steps and
+                        translating solutions into working code. Designed for
+                        beginners, this course provides the essential knowledge
+                        and confidence needed to explore programming further and
+                        progress into more advanced areas of software
+                        development.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
+                </div>
+              </section>
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
+                <img
+                  src="../images/img5.jpg"
+                  class="card-img-top"
+                  alt="AI fundamentals"
+                  style="height: 200px; object-fit: cover; width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">AI Fundamentals</h4>
+                  <p class="card-text">
+                    Learn the fundamentals of using AI for everyday tasks.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn-solid theme-primary"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#aiFundamentalsDialog"
+                  >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="aiFundamentalsDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">AI Fundamentals</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img5.jpg"
+                        class="p-3"
+                        alt="AI fundamentals"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Explore the exciting world of artificial intelligence
+                        and understand how intelligent systems learn, reason,
+                        and solve problems. This course introduces the
+                        fundamental concepts of AI, including machine learning,
+                        neural networks, natural language processing, computer
+                        vision, and generative AI. Learn how AI systems process
+                        data, recognize patterns, make predictions, and support
+                        decision-making across various industries. Discover the
+                        real-world applications, benefits, limitations, and
+                        ethical considerations of AI while gaining an
+                        understanding of the technologies shaping the future.
+                        Through practical examples and interactive activities,
+                        you will develop a solid foundation in artificial
+                        intelligence and prepare yourself to explore more
+                        advanced topics in AI and machine learning.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
+                </div>
+              </section>
+              <section class="card p-0 m-5 hover-lift" style="max-width: 320px">
+                <img
+                  src="../images/img6.jpg"
+                  class="card-img-top"
+                  alt="UI design"
+                  style="height: 200px; object-fit: cover; width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">UI Design</h4>
+                  <p class="card-text">Learn to build user interfaces.</p>
+                  <button
+                    type="button"
+                    class="btn-solid theme-primary"
+                    data-bs-toggle="dialog"
+                    data-bs-target="#uiDesignDialog"
+                  >
+                    View Details
+                  </button>
+
+                  <dialog class="dialog" id="uiDesignDialog">
+                    <div class="dialog-header">
+                      <h1 class="dialog-title">UI Design</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="dialog"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="dialog-body">
+                      <img
+                        src="../images/img6.jpg"
+                        class="p-3"
+                        alt="Web Development course"
+                        style="max-height: 200px"
+                      />
+                      <p>
+                        Learn the principles of user interface (UI) design and
+                        discover how to create visually appealing, intuitive,
+                        and user-friendly digital experiences. This course
+                        introduces essential design concepts, including layout,
+                        typography, color theory, spacing, visual hierarchy, and
+                        consistency. Explore how to design effective interfaces
+                        for websites, mobile applications, and other digital
+                        products while understanding the importance of usability
+                        and accessibility. Gain practical experience in creating
+                        wireframes, mockups, and interactive prototypes using
+                        modern design tools such as Figma. Through hands-on
+                        exercises and design projects, you will develop the
+                        skills to transform ideas into polished interfaces that
+                        balance aesthetics with functionality, providing a
+                        strong foundation for further learning in UI and UX
+                        design.
+                      </p>
+                    </div>
+                    <div class="dialog-footer">
+                      <button
+                        type="button"
+                        class="btn-solid theme-secondary"
+                        data-bs-dismiss="dialog"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </dialog>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-3 text-center text-lg-start h-10 mt-0">
+      <div class="text-center p-5 theme-primary theme-contrast">
+        <p>© 2026 LMS Platform. All rights reserved.</p>
+        <p class="mb-3">
+          <a href="./pages/privacy-policy.html">Privacy Policy</a> |
+          <a href="./pages/terms-of-use.html">Terms of Use</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
